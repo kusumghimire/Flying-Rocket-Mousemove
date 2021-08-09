@@ -32,7 +32,8 @@
 }
 
 .scene .rocket{
-    position: relative;
+    position: absolute;
+    pointer-events: none;
     animation: animate 0.2s ease infinite;
 }
 

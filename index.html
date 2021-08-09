@@ -14,6 +14,12 @@
         </div>
     </div>
   <script>
+document.addEventListener("mousemove", function(e){
+  var rocket = document.querySelector('.rocket');
+  rocket.style.left = e.offsetX + 'px';
+  rocket.style.top = e.offsetY + 'px';
+})
+
     function stars(){
       let count = 20;
       let scene =document.querySelector('.scene');
