@@ -35,14 +35,16 @@
     position: absolute;
     pointer-events: none;
     animation: animate 0.2s ease infinite;
+    transition: 0.2s;
+    cursor: pointer !important;
 }
 
 @keyframes animate {   
         0%,100%{
-            transform: translateY(-2px);
+            transform: translateY(-52px) translateX(-50%);
         }
         50%{
-            transform: translateY(2px);
+            transform: translateY(-48px) translateX(-50%);
         }
 }
 
@@ -68,3 +70,12 @@
     background: linear-gradient(#00d0ff,transparent);
     filter: blur(20px);
 }
+
+.scene:active .rocket::before,
+.scene:active .rocket::before{
+background: linear-gradient(#ff12d7, transparent);
+bottom: -300px;
+height: 300px;
+filter:blur(2px);
+}
+
