@@ -33,8 +33,23 @@
 .scene .rocket::before{
     content:'';
     position:absolute;
-    bottom: 0;
+    bottom: -200px;
     left: 50%;
     transform: translateX(-50%);
     width: 10px;
+    height: 200px;
+    background: linear-gradient(#00d0ff,transparent);
+}
+
+.scene .rocket::after{
+    content:'';
+    position:absolute;
+    bottom: -200px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 200px;
+    background: linear-gradient(#00d0ff,transparent);
+    filter: blur(20px);
+
 }
