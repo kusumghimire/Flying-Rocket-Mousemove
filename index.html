@@ -15,7 +15,7 @@
     </div>
   <script>
     function stars(){
-      let count = 50;
+      let count = 20;
       let scene =document.querySelector('.scene');
       let i=0;
       while(i < count){
@@ -27,13 +27,12 @@
 
         star.style.left = x + 'px';
         star.style.width = 1 + 'px';
-        star.style.height = 200 + h + 'px';
+        star.style.height = 50 + h + 'px';
         star.style.animationDuration = duration + 's';
 
         scene.appendChild(star);
         i++
       }
-      // console.log(i);
     }
     stars();
   </script>  
